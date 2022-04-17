@@ -42,7 +42,7 @@ h1{
     margin-bottom: 5%;   
 }
 
-.header-btn,.process-btn{
+.header-btn,.process-btn,.team-btn{
     background-color: #C69ea5;
     color: #fff;
     padding:10px 30px;
@@ -50,7 +50,7 @@ h1{
     border:solid;  
     border-color: #C69ea5;
 }
-.header-btn:hover,.process-btn:hover{
+.header-btn:hover,.process-btn:hover,.team-btn:hover{
     background-color: #8d7175;
     font-weight: bold;
     border-color:#8d7175;
@@ -68,11 +68,31 @@ h1{
     height: 70vh;
     width: auto;
 }
+.process-text,.team-text{
+    padding:50px;
+    margin-top: 10%;
+}
+.team-text{
+    width:70%;  
+    margin-left: 5%;
+}
 .process-text{
     width:50%;
-    padding:50px;
     float: right;
-    margin-top: 10%;
+}
+.team-info{
+    display: flex;
+    flex-direction: row;
+}
+.team-img{
+    width:300px;
+    height: auto;
+    padding: 10px;
+}
+.team-grid{
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
 }
 @media (max-width:916px) {
     .logo{
@@ -115,6 +135,18 @@ h1{
         width:100%;
         padding:50px;
         
+    }
+ 
+    .team-info{
+        flex-direction:column;
+    }
+    .team-text{
+        width:100%;
+        padding:0;  
+    }
+    .team-grid{
+        display: block;
+        margin: auto;
     }
 }
 @media (min-width:1179px) and (max-width:1026px) {
