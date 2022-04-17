@@ -42,7 +42,7 @@ h1{
     margin-bottom: 5%;   
 }
 
-.header-btn,.process-btn,.team-btn{
+.header-btn,.process-btn,.team-btn,.contact-btn{
     background-color: #C69ea5;
     color: #fff;
     padding:10px 30px;
@@ -50,7 +50,7 @@ h1{
     border:solid;  
     border-color: #C69ea5;
 }
-.header-btn:hover,.process-btn:hover,.team-btn:hover{
+.header-btn:hover,.process-btn:hover,.team-btn:hover,.contact-btn:hover{
     background-color: #8d7175;
     font-weight: bold;
     border-color:#8d7175;
@@ -93,6 +93,22 @@ h1{
     margin-top: 5%;
     display: flex;
     flex-wrap: wrap;
+}
+#contact{
+    padding-top: 10%;
+    width:50%;
+    margin: auto;
+}
+.contact-h2,.contact-p{
+    text-align: center;
+}
+.contact-button{
+    width: fit-content;
+    margin: auto;
+}
+.contact-btn{
+    width:100%;
+   
 }
 @media (max-width:916px) {
     .logo{
@@ -148,6 +164,7 @@ h1{
         display: block;
         margin: auto;
     }
+
 }
 @media (min-width:1179px) and (max-width:1026px) {
 
