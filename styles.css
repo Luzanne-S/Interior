@@ -88,7 +88,7 @@ h1{
     flex-direction: row;
 }
 .team-img{
-    width:300px;
+    width:250px;
     height: auto;
     padding: 10px;
 }
@@ -125,7 +125,7 @@ footer{
 }
 .footer-logo{
     display: block;
-   margin: auto;
+    margin: auto;
     width:200px;
     height: auto;
 }
@@ -141,6 +141,82 @@ footer{
 }
 .nav-link:hover{
     color: #8d7175;
+}
+.portfolio-text,.process-content{  
+    background-color: #fff;
+    width:40%; 
+    z-index: 1;
+    position: absolute;
+}
+.portfolio-text{
+    margin-top: -15%;
+    padding:20px;
+}
+.portfolio-picture,.process-picture{
+    z-index: -2;
+}
+.process-content{
+    margin-top: -20%;
+    padding:30px; 
+    margin-left: 5%; 
+}
+.rosebank-row,.project-ul-row,.cresta-row,.emmerantia-row,.colleague-row,.bio-row{
+    display: flex;
+    flex-direction: row;
+}
+.rosehead-img,.crestahead-img,.emmerantia-img,.process-img{
+    width:100%;
+    height:auto;
+}
+.rosebank-picture,.cresta-picture,.emmerantia-picture{
+    margin-top: 1%;
+}
+.rosebank-p,.cresta-p,.emmerantia-p{
+    width:60%;
+}
+ul{
+    list-style: none;
+}
+.project-ul{
+    margin-top: 20px;
+}
+.process-picture{
+    margin-top: -5%;
+}
+#the-team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.g-col-6{
+    text-align: center;
+}
+#steps{
+   align-items: center;
+}
+small{
+    font-weight: bolder;
+}
+
+.bio{
+    margin:auto;
+    width:70%;
+}
+.bio-h2{
+    text-align: center;
+    margin-top: 10%;
+}
+.bio-team-img{
+    width:200px;
+    height: auto;
+    padding: 10px;
+}
+
+.colleague-row{
+   display: flex;
+   justify-content: center;
+   width: fit-content;
+   margin: auto;
 }
 @media (max-width:916px) {
     .logo{
@@ -160,11 +236,14 @@ footer{
         height:auto;
         margin-top: -5%;
     }
-    #header{
+    #header,.colleague-row,.bio-row{
         display: flex;
         flex-direction: column;
     }
-    .header-text{
+    .header-btn{
+        margin-top: 10px;
+    }
+    .header-text,.portfolio-text,.process-content{
         background-color: #fff;
         width:100%;
         height: auto;
@@ -179,7 +258,7 @@ footer{
         height: 60vh;
         width: auto;
     }
-    .process-text{
+    .process-content,.process-text{
         width:100%;
         padding:50px;
         
@@ -196,10 +275,22 @@ footer{
         display: block;
         margin: auto;
     }
-   
-  
+    .rosebank-row,.cresta-row,.emmerantia-row{
+        flex-direction: column;
+    }
+    .rosebank-p,.cresta-p,.emmerantia-p{
+        width:100%;
+    }
+   .project-ul-row{
+       flex-direction: row;
+       font-size: small;
+   }
+   .colleague-row{
+       margin: auto;
+   }
+
 }
-@media (min-width:1179px) and (max-width:1026px) {
+@media (min-width:1023px) and (max-width:1179px) {
 
     .header-img{
         width: 100%;
@@ -213,6 +304,13 @@ footer{
     }
     .header-text{
         width: 100%;
+        width:35%;
+        height: auto;
+        margin-top: -50%;
+       
+        position: absolute;
+        z-index: 1;
+        padding: 25px;
     }
     .process-text{
         width:100%;
