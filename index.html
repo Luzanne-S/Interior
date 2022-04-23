@@ -12,7 +12,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Sans+3:wght@300&display=swap" rel="stylesheet"> 
-    <script src="https://kit.fontawesome.com/5d391d372a.js" crossorigin="anonymous"></script>  
+    <script src="https://kit.fontawesome.com/5d391d372a.js" crossorigin="anonymous"></script> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
     <link rel="stylesheet" href="styles.css">
     <title>Haus Interior Design</title> 
 </head>
@@ -47,7 +49,8 @@
            <div class="header-picture">
           <img src="images/header.jpg" class="header-img" alt="pastel bedroom colour with bed"/>
            </div>
-           <div class="header-text">
+           <div class="header-text" data-aos="fade-up"
+           data-aos-duration="3000">
            <h1>TAILORED INTERIOR DESIGN</h1>
            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
            <div class="header-buttons">
@@ -57,7 +60,8 @@
            </div>
            </section>
            <!--Testimonials-->
-           <section id="testimonials">
+           <section id="testimonials" data-aos="fade-up"
+           data-aos-duration="3000">
             <div class="card-group">
                 <div class="card" style="border: transparent;">
                   <img src="images/rosebank/Rosebank.jpg" class="card-img-top" alt="light and airy bedroom">
@@ -82,7 +86,8 @@
            </section>
            <!--Process-->
            <section id="process">
-           <div class="process-text">
+           <div class="process-text" data-aos="fade-up"
+           data-aos-duration="3000">
             <h2>Our Process</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
             <div class="process-button">
@@ -92,7 +97,8 @@
            </section>
            <!--Team-->
            <section id="team">
-           <div class="team-info">
+           <div class="team-info" data-aos="fade-up"
+           data-aos-duration="3000">
              <div class="team-text">
               <h2>Our Team</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
@@ -109,7 +115,8 @@
            </div>
            </section>
            <!--Contact-->
-           <section id="contact">
+           <section id="contact" data-aos="fade-up"
+           data-aos-duration="3000">
              <h2 class="contact-h2">Contact Us</h2>
              <p class="contact-p">If you're interested in talking to us about a potential design project, please contact us below</p>
             <div class="mb-3">
@@ -149,5 +156,8 @@
                 <a class="navbar-brand" href="#"><img src="images/logo.png" class="footer-logo " alt="Haus logo"></a> 
                 </footer>             
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
