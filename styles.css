@@ -105,6 +105,12 @@ h1{
 .contact-h2,.contact-p{
     text-align: center;
 }
+.form-control,.form-control:focus{
+    background-color: #b8aeb042;
+   border: none;
+   border-radius: 0;
+}
+
 .contact-button{
     width: fit-content;
     margin: auto;
@@ -159,6 +165,9 @@ footer{
     margin-top: -20%;
     padding:30px; 
     margin-left: 5%; 
+}
+.process-p{
+    text-align: center;
 }
 .rosebank-row,.project-ul-row,.cresta-row,.emmerantia-row,.colleague-row,.bio-row{
     display: flex;
@@ -255,7 +264,7 @@ small{
     #process{
         background-image: url(images/joanna-kosinska.jpg);
         background-position: center;
-        height: 60vh;
+        height: 400px;
         width: auto;
     }
     .process-content,.process-text{
@@ -263,17 +272,22 @@ small{
         padding:50px;
         
     }
- 
+  
     .team-info{
         flex-direction:column;
+        margin: 0;
+        width:100%;
     }
     .team-text{
-        width:100%;
         padding:0;  
     }
     .team-grid{
-        display: block;
-        margin: auto;
+       margin-left: 5%;
+    }
+    .team-img{
+        width:150px;
+        height: auto;
+        padding: 10px;
     }
     .rosebank-row,.cresta-row,.emmerantia-row{
         flex-direction: column;
@@ -288,7 +302,12 @@ small{
    .colleague-row{
        margin: auto;
    }
-
+   .contact-h2,.contact-p{
+    text-align: left;
+   }
+   #contact{
+    width:85%
+   }
 }
 @media (min-width:1023px) and (max-width:1179px) {
 
@@ -318,4 +337,14 @@ small{
         margin-top: 20%;
     }
  
+}
+
+@media (min-width:1022px) and (max-width:1181px) {
+    .navbar-nav{
+        margin-left: 55%;
+    }
+    .nav-item{
+        padding-left:0;
+
+    }
 }
