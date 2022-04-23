@@ -12,7 +12,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Sans+3:wght@300&display=swap" rel="stylesheet">   
-    <script src="https://kit.fontawesome.com/5d391d372a.js" crossorigin="anonymous"></script> 
+    <script src="https://kit.fontawesome.com/5d391d372a.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  
     <link rel="stylesheet" href="styles.css">
     <title>Haus Interior Design-Portfolio</title>
 </head>
@@ -47,14 +49,16 @@
         <div class="portfolio-picture">
           <img src="images/portfolio-head.jpg" class="header-img" alt="pastel bedroom colour with bed"/>
            </div>
-           <div class="portfolio-text">
+           <div class="portfolio-text" data-aos="fade-up"
+           data-aos-duration="3000">
             <h1 class="portfolio-h1">LOOK AT OUR DESIGNS</h1>
             <p class="portfolio-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             </div>
       </section>
        <!--Work Grid-->
        <section id="work">
-        <div class="card-group">
+        <div class="card-group" data-aos="fade-up"
+        data-aos-duration="3000">
             <div class="card" style="border: transparent;">
              <a href="rosebank.html"> <img src="images/rosebank/Rosebank.jpg" class="card-img-top" alt="light and airy bedroom"></a>
               <div class="card-body"> 
@@ -80,7 +84,8 @@
           </div>   
        </section>
      <!--Contact-->
-     <section id="contact">
+     <section id="contact" data-aos="fade-up"
+     data-aos-duration="3000">
       <h2 class="contact-h2">Contact Us</h2>
       <p class="contact-p">If you're interested in talking to us about a potential design project, please contact us below</p>
      <div class="mb-3">
@@ -120,5 +125,8 @@
     <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="footer-logo " alt="Haus logo"> </a>
     </footer>
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+       <script>
+        AOS.init();
+      </script>
 </body>
 </html>
