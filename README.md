@@ -13,14 +13,14 @@ The site has a main page that that has links to other pages;
 
 # Built with 
 
-HTML
-CSS 
-Animate on Scroll
-Bootstrap
-Font Awesome
-Google Fonts
-Images from pexels and unsplash
-Google reCAPTCHA
+- HTML
+- CSS 
+- Animate on Scroll
+- Bootstrap
+- Font Awesome
+- Google Fonts
+- Images from pexels and unsplash
+- reCAPTCHA
 
 
 # Live site
