@@ -14,7 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Source+Sans+3:wght@300&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/5d391d372a.js" crossorigin="anonymous"></script>  
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>   
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>  
     <link rel="stylesheet" href="styles.css">
     <title>Haus Interior Design-Our Process</title>
 </head>
@@ -56,15 +57,13 @@
       </div>
   </section>
   <!--Steps-->
-  <section id="steps">
-  <div class="container px-4 py-5" id="custom-cards">
-    <div class="row row-cols-1 row-cols-lg-2 align-items-stretch g-4 py-5">
+  <section id="steps">    
       <!--consultation column-->
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden  bg-dark rounded-5" style="background-image: url('images/process/Blueprint.jpg');background-position: center;background-size: cover;">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+      <div class="col-step">
+        <div class="card card-cover h-100 overflow-hidden" style="background-image: url('images/process/Blueprint.jpg');background-position: center;background-size: cover;">
+          <div class="d-flex flex-column h-100 p-5 pb-3 step1">
             <h5>Step 1</h5>
-            <h4 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Consultation</h4>
+            <h4 class="pt-5  mb-4 display-6 lh-1 fw-bold">Consultation</h4>
             <ul class="d-flex list-unstyled mt-auto">
                 <li class="d-flex align-items-center me-3">
                  <small>This is a wider card with supporting text below as a natural lead-in to additional</small>
@@ -74,11 +73,11 @@
         </div>
       </div>
       <!--agreement column-->
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden  bg-dark rounded-5" style="background-image: url('images/process/Signing.jpg');background-position: center;background-size: cover;">
-          <div class="d-flex flex-column h-100 p-5 pb-3  text-shadow-1">
+      <div class="col-step">
+        <div class="card card-cover h-100 overflow-hidden" style="background-image: url('images/process/Signing.jpg');background-position: center;background-size: cover;">
+          <div class="d-flex flex-column h-100 p-5 pb-3 step2 " >
             <h5>Step 2</h5>
-            <h4 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Letter of Agreement</h4>
+            <h4 class="pt-5  mb-4 display-6 lh-1 fw-bold">Letter of Agreement</h4>
             <ul class="d-flex list-unstyled mt-auto">
                 <li class="d-flex align-items-center me-3">
                 <small>This is a wider card with supporting text below as a natural lead-in to additional</small>
@@ -86,17 +85,14 @@
             </ul>
           </div>
         </div>
-      </div>
-    </div>
+      </div> 
   </div>
-  <div class="container px-4 py-5" id="custom-cards">
-    <div class="row row-cols-1 row-cols-lg-2 align-items-stretch g-4 py-5">
       <!--design and development column-->
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden  bg-dark rounded-5" style="background-image: url('images/process/Design\ development.jpg');background-position: center;background-size: cover;">
-          <div class="d-flex flex-column h-100 p-5 pb-3  text-shadow-1">
+      <div class="col-step">
+        <div class="card card-cover h-100 overflow-hidden" style="background-image: url('images/process/Design\ development.jpg');background-position: center;background-size: cover;">
+          <div class="d-flex flex-column h-100 p-5 pb-3 step3">
             <h5>Step 3</h5>
-            <h4 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Design and Development</h4>
+            <h4 class="pt-5  mb-4 display-6 lh-1 fw-bold">Design and Development</h4>
             <ul class="d-flex list-unstyled mt-auto">            
               <li class="d-flex align-items-center me-3">    
               <small>This is a wider card with supporting text below as a natural lead-in to additional</small>
@@ -106,11 +102,11 @@
         </div>
       </div>
       <!--construction column-->
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden  bg-dark rounded-5" style="background-image: url('images/process/Design\ complete.jpg'); background-position: center;background-size: cover;">
-          <div class="d-flex flex-column h-100 p-5 pb-3  text-shadow-1">
+      <div class="col-step">
+        <div class="card card-cover h-100 overflow-hidden" style="background-image: url('images/process/Design\ complete.jpg'); background-position: center;background-size: cover;">
+          <div class="d-flex flex-column h-100 p-5 pb-3 step4 ">
             <h5>Step 4</h5>
-            <h4 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Construction</h4>
+            <h4 class="pt-5  mb-4 display-6 lh-1 fw-bold">Construction</h4>
             <ul class="d-flex list-unstyled mt-auto">
               <li class="d-flex align-items-center me-3">
                <small>This is a wider card with supporting text below as a natural lead-in to additional</small>
@@ -118,8 +114,7 @@
             </ul>
           </div>
         </div>
-      </div>
-    </div>
+      </div>  
   </div>
   <p class="process-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
 </section>
@@ -139,6 +134,7 @@
      <label for="exampleFormControlTextarea1" class="form-label">Message</label>
      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
    </div>
+   <div class="g-recaptcha" data-sitekey="6LcMkZgfAAAAAOlby6nM0sB8uhL8UV53bd-wdPFb"></div>
    <div class="contact-button">
      <a href="#"><button class="contact-btn"> Submit</button></a>  
  </div>
