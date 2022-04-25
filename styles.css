@@ -168,6 +168,17 @@ footer{
 }
 .process-p{
     text-align: center;
+    margin-top: 8%;
+}
+.col-step{
+    margin-top: 5%;
+}
+.step1,.step3{
+    width:50%;
+}
+.step2,.step4{
+    
+  margin-left: 50%;
 }
 .rosebank-row,.project-ul-row,.cresta-row,.emmerantia-row,.colleague-row,.bio-row{
     display: flex;
@@ -272,7 +283,12 @@ small{
         padding:50px;
         
     }
-  
+    .step1,.step2,.step3,.step4{
+        width:100%;
+    }
+    .step2,.step4{
+        margin:auto;
+    }
     .team-info{
         flex-direction:column;
         margin: 0;
